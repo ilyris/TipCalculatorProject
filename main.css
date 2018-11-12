@@ -1,5 +1,4 @@
-body,
-html {
+body{
     background: #040404;
     color: #fff;
     margin: 0;
@@ -10,7 +9,93 @@ html {
 
 #calculator-container {
     background: lightskyblue;
+    width: 50%;
+    height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+}
+.calculator {
+    width: 100%;
+    height: 100%;
+    background: black;
+    grid-column: 3/9;
+    grid-row: 3/9;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    text-align: center;
+    padding: 10px;
 }
 h1 {
-    color: pink;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-size: 28px;
+    grid-row: 1/1;
+    grid-column: 1/11;
+}
+.calculator-input {
+    grid-column: 1/11;
+    grid-row: 2/11;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+}
+.bill-total {
+    display: flex;
+    justify-content: center;
+    grid-row: 1/1;
+    grid-column: 1/6;
+}
+
+.rate-service {
+    display: flex;
+    grid-row: 3/3;
+    grid-column: 1/6;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.bill-text,
+.rate-service-text {
+    margin: 0;
+    padding-right: 10px;
+    font-size: 22px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    box-sizing: border-box;
+}
+.label-for-bill {
+    font-size: 23px;
+    position: relative;
+    color: black;
+    left: 20px;
+    align-items: center;
+    display: flex;
+}
+#bill-input,
+#service-input {
+    box-sizing: border-box;
+    font-size: 16px;
+    width: 42%;
+    margin: 5px;
+}
+#service-input {
+    padding-left: 0;
+}
+.symbol {
+    width: 100%;
+    text-align: left;
+    font-size: 26px;
+    position: relative;
+}
+.total-tip {
+    grid-row: 8/8;
+    grid-column: 1/4;
+    font-size: 30px;
+    text-align: left;
 }

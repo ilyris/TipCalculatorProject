@@ -4,13 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="main.css"/>
 </head>
 <body>
     <section id ="calculator-container">
-<h1 Tip Calculator By: Dylan Sieren></h1>
+        <div class="calculator">
+            <h1 class="title"> Tip Calculator By: Dylan Sieren</h1>
+            <form class="calculator-input">
+            <!------Billing Input Information------>
+                <div class ="bill-total">
+                    <p class="bill-text"> bill total:</p>
+                    <label class="label-for-bill" for ="billTotal">$</label>
+                    <input id="bill-input" type="text" name = "billTotal">
+                </div>
+                <!------Rate of Service Information----->
+                <div class ="rate-service">
+                        <p class="rate-service-text">Tip Percentage</p>
+                        <input type="range" id="service-input" name="TipPercentage" min="0" max="100" value="0">
+                        <span id="symbol">0%</span>
+                    </div>
+                    <div class = "total-tip">Tip to leave = </div>
+            </form>
+        </div>
     </section>
     
-    
+    <script src="main.js"></script>
 </body>
 </html>
