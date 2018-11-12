@@ -5,9 +5,7 @@ let percentageText = document.getElementById('symbol').innerHTML;
 
 tipPercentage.addEventListener("input", function(value) {
     let tipPercentValue = tipPercentage.value;
-    tipPercentValue +=  tipPercentValue ;
-    percentageText += tipPercentValue;
+    percentageText.replace('0%', tipPercentValue);
+    console.log(tipPercentValue);
     console.log(percentageText);
-
-    // console.log(tipPercentValue);
 });
