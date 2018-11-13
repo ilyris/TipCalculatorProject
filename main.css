@@ -52,7 +52,7 @@ h1 {
 
 .rate-service {
     display: flex;
-    grid-row: 3/3;
+    grid-row: 3/8;
     grid-column: 1/6;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -84,18 +84,29 @@ h1 {
     width: 42%;
     margin: 5px;
 }
+#bill-input {
+    padding-left: 13px;
+}
 #service-input {
     padding-left: 0;
 }
-.symbol {
+#symbol {
     width: 100%;
     text-align: left;
     font-size: 26px;
     position: relative;
+    font-size: 32px;
 }
 .total-tip {
-    grid-row: 8/8;
+    grid-row: 8/11;
     grid-column: 1/4;
     font-size: 30px;
     text-align: left;
+    align-items: center;
+    display: flex;
+}
+#symbol {
+    width: 100%;
+    text-align: left;
+    padding-top: 10px;
 }
