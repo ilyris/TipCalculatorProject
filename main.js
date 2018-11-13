@@ -13,8 +13,8 @@ let total;
         document.querySelector('.total-tip').innerHTML = "Your tip is: $" + total.toFixed(2); 
     }
 });
-   
-typedPercentage.addEventListener('keyup', function() {
+
+typedPercentage.addEventListener('input', function() {
     document.getElementById('symbol').innerHTML = typedPercentage.value + "%";
     total = billTotal.value * typedPercentage.value / 100;
     if( billTotal.value <= 0)     {
