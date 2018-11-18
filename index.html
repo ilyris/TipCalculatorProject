@@ -18,15 +18,24 @@
                     <label class="label-for-bill" for ="billTotal">$</label>
                     <input id="bill-input" type="text" name = "billTotal">
                 </div>
+                <div class="party-number-container">
+                    <label class="number-of-party">How many are in your party?</label>
+                    <input type="text" id="party-number" name ="party" min="0" max="100" value="0">
+                </div>
                 <!------Rate of Service Information----->
                 <div class ="rate-service">
                         <p class="rate-service-text">Tip Percentage</p>
                         <input type="range" id="service-input" name="TipPercentage" min="0" max="100" value="0">
+                </div>
+                <div class="typed-percentage-container">
                         <label id="label-for-typed-percentage" for ="typedPercentage">You may also type your percentage here</label>
                         <input type="text" id="typed-percentage-input" name ="typedPercentage "min="0" max="100" value="0">
+                </div>
                         <span id="symbol">0%</span>
-                    </div>
-                    <div class = "total-tip">Your tip total will appear here </div>
+                        <div class = "total-tip">Your tip total will appear here </div>
+                </div>
+
+
             </form>
         </div>
     </section>
