@@ -15,7 +15,11 @@ a,h1,h2,h3,h3,h5,h6,p,div,span {
 }
 
 #calculator-container {
-    background: #6200ffbe;
+    background: #100a1c;
+    background-image:
+      radial-gradient(50% 30% ellipse at center top, #201e40 0%, rgba(0,0,0,0) 100%),
+      radial-gradient(60% 50% ellipse at center bottom, #261226 0%, #100a1c 100%);
+    background-attachment: fixed;
     width: 50%;
     height: 100vh;
     margin: 0 auto;
